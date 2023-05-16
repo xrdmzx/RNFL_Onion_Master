@@ -400,8 +400,8 @@ def main(df, user_input):
             radius_from_margin_mm = px_to_mm(um_per_px, j)
             sup_values = (ch11_array[j] + ch12_array[j] + ch1_array[j])/3
             inf_values = (ch5_array[j] + ch6_array[j] + ch7_array[j])/3
-            nas_values = (ch8_array[j] + ch9_array[j] + ch10_array[j])/3
-            tem_values = (ch2_array[j] + ch3_array[j] + ch4_array[j])/3
+            tem_values = (ch8_array[j] + ch9_array[j] + ch10_array[j])/3
+            nas_values = (ch2_array[j] + ch3_array[j] + ch4_array[j])/3
             avg_values = (sup_values + nas_values + inf_values + tem_values)/4
             # write data per row to csv
             with open('results-' + script_name + '-' + f_time + '.csv', 'a', newline='') as results_csvfile:
